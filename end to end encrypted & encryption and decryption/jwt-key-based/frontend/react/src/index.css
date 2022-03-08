@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-smoothing: "antialiased";
+    -webkit-font-smoothing: "antialiased";
+}
+
+body {
+    background: #161515
+}
+
+input, button, select {
+    width: 100%;
+    background: #000;
+    color: #fff
+}

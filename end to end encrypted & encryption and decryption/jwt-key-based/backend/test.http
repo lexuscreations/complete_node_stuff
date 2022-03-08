@@ -1,0 +1,19 @@
+POST http://localhost:3001/encrypt
+Content-Type: application/json
+
+{
+        "data": {"name":"lokesh", "age":"24"},
+        "expiresIn": "10s",
+        "key": "mysecretkey",
+        "algorithm": "HS384"
+}
+
+###
+
+POST http://localhost:3001/decrypt
+Content-Type: application/json
+
+{
+        "key": "lokesh",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoic2VjcmVjdCBtc2cgaCB5ZSBub3JtYWwgbmhpIiwiaWF0IjoxNjQ2NjYyNTE3LCJleHAiOjE2NDY2NjI1Mzd9.L8mQMairqom8V7ddWPkOv1QeMnXKHhitJdkJwvUWyBA"
+}
